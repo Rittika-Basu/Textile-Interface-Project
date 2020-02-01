@@ -1,14 +1,16 @@
-#include <digitalWriteFast.h>
-#include <Talkie.h>
-#include <TalkieLPC.h>
-#include <TalkieUtils.h>
-#include <Vocab_Soundbites.h>
-#include <Vocab_Special.h>
-#include <Vocab_Toms_Diner.h>
-#include <Vocab_US_Acorn.h>
-#include <Vocab_US_Clock.h>
-#include <Vocab_US_Large.h>
-#include <Vocab_US_TI99.h>
+// This is the talkie library, the code works without including the library in my system, 
+//but for for computer, the user needs to load the library
+// #include <digitalWriteFast.h>
+// #include <Talkie.h>
+//#include <TalkieLPC.h>
+//#include <TalkieUtils.h>
+//#include <Vocab_Soundbites.h>
+//#include <Vocab_Special.h>
+//#include <Vocab_Toms_Diner.h>
+//#include <Vocab_US_Acorn.h>
+//#include <Vocab_US_Clock.h>
+//#include <Vocab_US_Large.h>
+//#include <Vocab_US_TI99.h>
 
 
 #include <Adafruit_CircuitPlayground.h>
@@ -22,8 +24,8 @@ const uint8_t spALERT[]     PROGMEM = {0xA5, 0xCF, 0xC6, 0xAB, 0x55, 0x5B, 0xAF,
 
 #define ANALOG_INPUT  A5
 // These defines set the range of expected analog values.
-#define VALUE_MIN     1008
-#define VALUE_MAX     1020
+#define VALUE_MIN     700
+#define VALUE_MAX     1000
 
 // These defines set the range of pixel color when mapping
 // to the sensor value.
